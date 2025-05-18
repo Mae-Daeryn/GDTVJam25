@@ -7,7 +7,7 @@ public class Task
     public string shortDescription;
     public string description;
 
-    public TerrariumTyp type;
+    public TerrariumType type;
     public List<string> criteria;
     public List<string> criteriaOptional;
 }
