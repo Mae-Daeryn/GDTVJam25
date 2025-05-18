@@ -1,4 +1,4 @@
-public enum TerrariumTyp
+public enum TerrariumType
 {
     Desert,
     Rainforest,
