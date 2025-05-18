@@ -7,18 +7,18 @@ public static class AuftragDatenbank
         new Auftrag
         {
             titel = "Gecko-Terrarium",
-            kurzeBeschreibung = "Ein Wüsten-Terrarium für einen Gecko.",
-            beschreibung = "Ein Kunde möchte ein Terrarium für einen Gecko mit 2 Wüstenpflanzen und 1 Wärmelampe.",
-            typ = TerrariumTyp.Wueste,
-            pflichtKriterien = new List<string> { "2 Wüstenpflanzen", "1 Wärmelampe" },
-            optionaleKriterien = new List<string> { "Deko: Totenschädel", "Wüstenstein" }
+            kurzeBeschreibung = "Ein WÃ¼sten-Terrarium fÃ¼r einen Gecko.",
+            beschreibung = "Ein Kunde mÃ¶chte ein Terrarium fÃ¼r einen Gecko mit 2 WÃ¼stenpflanzen und 1 WÃ¤rmelampe.",
+            typ = TerrariumTyp.Desert,
+            pflichtKriterien = new List<string> { "2 WÃ¼stenpflanzen", "1 WÃ¤rmelampe" },
+            optionaleKriterien = new List<string> { "Deko: TotenschÃ¤del", "WÃ¼stenstein" }
         },
         new Auftrag
         {
             titel = "Frosch-Terrarium",
-            kurzeBeschreibung = "Ein Regenwald-Terrarium für Frösche.",
+            kurzeBeschreibung = "Ein Regenwald-Terrarium fÃ¼r FrÃ¶sche.",
             beschreibung = "Regenwald-Stimmung mit viel Feuchtigkeit und Pflanzen.",
-            typ = TerrariumTyp.Regenwald,
+            typ = TerrariumTyp.Rainforest,
             pflichtKriterien = new List<string> { "2 Regenwaldpflanzen", "1 Nebelmaschine" },
             optionaleKriterien = new List<string> { "Moos", "Hintergrundbild" }
         }

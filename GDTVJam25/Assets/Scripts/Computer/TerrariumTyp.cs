@@ -1,6 +1,6 @@
 public enum TerrariumTyp
 {
-    Wueste,
-    Regenwald,
-    Wasser
+    Desert,
+    Rainforest,
+    Water
 }
