@@ -1,10 +1,26 @@
-using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public abstract class BaseAnimal
+public class AnimalProperties : MonoBehaviour
 {
-    public List<GameObject> PLUS;
-    public List<GameObject> MINUS;
+    [SerializeField]
+    public GameObject[] PLUS;
+    [SerializeField]
+
+    public GameObject[] MINUS;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
 
     public int GetPointsForObject(GameObject go)
     {
