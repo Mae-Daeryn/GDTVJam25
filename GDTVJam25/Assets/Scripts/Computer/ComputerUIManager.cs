@@ -4,38 +4,38 @@ using UnityEngine.SceneManagement;
 
 public class ComputerUIManager : MonoBehaviour
 {
-    public GameObject auftragButtonPrefab; // Prefab mit AuftragEintragUI
+    public GameObject taskButtonPrefab; // Prefab mit AuftragEintragUI
     public Transform contentParent;        // Inhalt der ScrollView
-    public TextMeshProUGUI beschreibungText; // Infotext
+    public TextMeshProUGUI descriptionText; // Infotext
 
-    private Auftrag aktuellAusgewählt;
+    private Task currentlySelected;
 
     void Start()
     {
-        foreach (var auftrag in AuftragDatenbank.Alle)
+        foreach (var task in TaskDatabase.All)
         {
-            GameObject eintrag = Instantiate(auftragButtonPrefab, contentParent);
-            eintrag.GetComponent<AuftragEintragUI>().Setup(auftrag, this);
+            GameObject entry = Instantiate(taskButtonPrefab, contentParent);
+            entry.GetComponent<TaskEntryUI>().Setup(task, this);
         }
     }
 
-    public void ZeigeBeschreibung(Auftrag auftrag)
+    public void ShowDescription(Task task)
     {
-        aktuellAusgewählt = auftrag;
-        beschreibungText.text = auftrag.beschreibung;
+        currentlySelected = task;
+        descriptionText.text = task.description;
     }
 
-    public void Annehmen(Auftrag auftrag)
+    public void Accept(Task task)
     {
-        Debug.Log("Auftrag angenommen: " + auftrag.titel);
-        // z.?B. speichern im GameManager oder nächste Szene laden
+        Debug.Log("Task accepted: " + task.title);
+        // z.?B. speichern im GameManager oder nï¿½chste Szene laden
         // GameManager.Instance.aktiverAuftrag = auftrag;
-        SceneManager.LoadScene("TerrariumAuswahl"); // oder was auch immer
+        SceneManager.LoadScene("TerrariumSelect"); // oder was auch immer
     }
 
-    public void Ablehnen()
+    public void Decline()
     {
-        aktuellAusgewählt = null;
-        beschreibungText.text = "";
+        currentlySelected = null;
+        descriptionText.text = "";
     }
 }
