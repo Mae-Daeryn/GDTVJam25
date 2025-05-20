@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class select : MonoBehaviour, IPointerClickHandler
+public class select : MonoBehaviour, IPointerDownHandler
 {
 
     private RectTransform rectTransform;
@@ -18,12 +19,13 @@ public class select : MonoBehaviour, IPointerClickHandler
         rectTransform = GetComponent<RectTransform>();
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData eventData)
     {
-
+        Debug.Log("test");
 
         if (eventData.pointerCurrentRaycast.gameObject == trash)
         {
+            Debug.Log("test");
             Destroy(selected);
             Vector3 posi = edit.transform.position;
             posi.y = -1000f;
@@ -39,18 +41,16 @@ public class select : MonoBehaviour, IPointerClickHandler
         }
         else if (eventData.pointerCurrentRaycast.gameObject != rectTransform.gameObject)
         {
+            Debug.Log("test");
             if (selected != eventData.pointerCurrentRaycast.gameObject)
             {
                 if(eventData.pointerCurrentRaycast.gameObject != edit)
                 {
                 if (selected != null)
                 {
-                    Destroy(selected.GetComponent<Outline>());
                     selected = null;
                 }
-                selected = eventData.pointerCurrentRaycast.gameObject;
-                selected.AddComponent<Outline>().effectColor = Color.yellow;
-                selected.GetComponent<Outline>().effectDistance = new Vector2(0.05f, 0.05f);
+                selected = eventData.pointerPressRaycast.gameObject;
                 edit.transform.position = selected.gameObject.transform.position;
                 Vector3 pos = edit.transform.position;
                 pos.y = selected.transform.position.y + 100f;
@@ -66,7 +66,6 @@ public class select : MonoBehaviour, IPointerClickHandler
                 Vector3 pos = edit.transform.position;
                 pos.y = -1000f;
                 edit.transform.position = pos;
-                Destroy(selected.GetComponent<Outline>());
                 selected = null;
             }
 

@@ -5,9 +5,7 @@ using UnityEngine.UI;
 public class TaskEntryUI : MonoBehaviour
 {
     public TextMeshProUGUI titleText;
-    public TextMeshProUGUI shortDescriptionText;
-    public Button acceptButton;
-    public Button declineButton;
+    public TextMeshProUGUI sender;
 
     private Task task;
     private ComputerUIManager manager;
@@ -17,11 +15,8 @@ public class TaskEntryUI : MonoBehaviour
         task = t;
         manager = m;
 
-        titleText.text = t.title;
-        shortDescriptionText.text = t.shortDescription;
+        titleText.text = t.subject;
+        sender.text = t.sender;
 
-        acceptButton.onClick.AddListener(() => manager.Accept(task));
-        declineButton.onClick.AddListener(() => manager.Decline());
-        GetComponent<Button>().onClick.AddListener(() => manager.ShowDescription(t));
     }
 }

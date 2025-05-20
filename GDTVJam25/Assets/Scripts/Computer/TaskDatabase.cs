@@ -6,21 +6,27 @@ public static class TaskDatabase
     {
         new Task
         {
-            title = "Gecko-Terrarium",
-            shortDescription = "A desert terrarium for a Gecko.",
-            // shortDescription = "Ein Wüsten-Terrarium für einen Gecko.",
-            // description = "Ein Kunde möchte ein Terrarium für einen Gecko mit 2 Wüstenpflanzen und 1 Wärmelampe.",
-            description = "A customer wants to build a terrarium for a gecko. He wants to have at least 1 desert plant and 1 heat lamp",
+            subject = "Bearded Dragon Terra build",
+            sender = "Margaret",
+            sendermail = "noIdeaWhatToPutHere@gmail.com",
+            mailContent = "Hiii,\n" +
+            "I need a Tank for a Bearded Dragon.\n" +
+            "Thanks,\n" +
+            "Margaret",
+            description = "A customer wants to build a terrarium for a Bearded Dragon. He wants to have at least 1 desert plant and 1 heat lamp",
             type = TerrariumType.Desert,
             criteria = new List<string> { "2 Desert plants", "1 Heat lamp" },
             criteriaOptional = new List<string> { "Deko: Skull", "Desert stone" }
         },
         new Task
         {
-            title = "Frog-Terrarium",
-            // shortDescription = "Ein Regenwald-Terrarium für Frösche.",
-            shortDescription = "A rainforest terrarium for frogs.",
-            // description = "Regenwald-Stimmung mit viel Feuchtigkeit und Pflanzen.",
+            subject = "Frog-Terrarium",
+            sender = "froglover69",
+            sendermail = "froglover69@froggystyle.de",
+            mailContent = "Dear Terra-Building,\n" +
+            "pls make me a Frog Tank.\n" +
+            "Best Regards,\n" +
+            "FrogLover from FroggyStyle",
             description = "Rainforest ambience with lots of humidity and plants",
             type = TerrariumType.Rainforest,
             criteria = new List<string> { "2 Rainforest plants", "1 Smoke machine" },

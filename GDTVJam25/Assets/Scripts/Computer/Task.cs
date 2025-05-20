@@ -3,9 +3,11 @@ using System.Collections.Generic;
 [System.Serializable]
 public class Task
 {
-    public string title;
-    public string shortDescription;
+    public string subject;
     public string description;
+    public string sender;
+    public string sendermail;
+    public string mailContent;
 
     public TerrariumType type;
     public List<string> criteria;

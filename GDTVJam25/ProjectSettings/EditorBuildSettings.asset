@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dekorieren.unity
     guid: e77af1caabca79643b473b5c67f05b24
+  - enabled: 1
+    path: Assets/Scenes/Raumansicht.unity
+    guid: 3999e16117bc4aa4e9ca21a60f9d956e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
