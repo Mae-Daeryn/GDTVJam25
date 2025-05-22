@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
+public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     private RectTransform rectTransform;
     public RectTransform dropzone;
@@ -47,7 +47,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     public void OnEndDrag(PointerEventData eventData)
     {
         Image image = rectTransform.GetComponent<Image>();
-        image.color = Color.red;
         if(!RectTransformUtility.RectangleContainsScreenPoint(dropzone, Input.mousePosition, eventData.pressEventCamera)) {
             Destroy(rectTransform.gameObject);
             Vector3 pos = edit.transform.position;
@@ -56,7 +55,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         }
     }
 
-    public void OnPointerDown(PointerEventData eventData)
+    public void OnPointerClick(PointerEventData eventData)
     {
     }
 

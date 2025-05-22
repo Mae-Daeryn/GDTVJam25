@@ -10,6 +10,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static UnityEngine.EventSystems.EventTrigger;
+using System;
 
 public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
 {
@@ -19,7 +20,8 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
     public TextMeshProUGUI sender;
     public TextMeshProUGUI subject;
     private Dictionary<GameObject, Task> mails = new Dictionary<GameObject, Task>();
-
+    public RectTransform canvas;
+    public TextMeshProUGUI TIME;
     void Start()
     {
         int currentEntry = -1;
@@ -40,8 +42,19 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
             }
         }
         taskButtonPrefab.transform.position = new Vector3(taskButtonPrefab.transform.position.x + 10000, 0, 0);
+
+        if (GameObject.Find("quest") != null)
+        {
+            GameObject.Find("quest").transform.SetParent(canvas);
+            GameObject quest = GameObject.Find("quest");
+        }
+        TIME.text = System.DateTime.Now.ToString();
     }
 
+    private void Update()
+    {
+        TIME.text = System.DateTime.Now.ToString();
+    }
 
     public void OnPointerDown(PointerEventData eventData)
     {
