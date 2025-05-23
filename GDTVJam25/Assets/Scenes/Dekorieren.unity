@@ -1541,6 +1541,7 @@ MonoBehaviour:
   excludeObjects:
   - {fileID: 1011922742}
   target: 1
+  TerraPanel: {fileID: 1582138426}
 --- !u!1 &896041827
 GameObject:
   m_ObjectHideFlags: 0
@@ -2623,7 +2624,7 @@ GameObject:
   - component: {fileID: 1582138428}
   m_Layer: 5
   m_Name: Panel
-  m_TagString: Untagged
+  m_TagString: rainforest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
