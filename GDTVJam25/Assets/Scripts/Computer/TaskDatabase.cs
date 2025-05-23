@@ -14,7 +14,7 @@ public static class TaskDatabase
             "Thanks,\n" +
             "Margaret",
             description = "A customer wants to build a terrarium for a Bearded Dragon. He wants to have at least 1 desert plant and 1 heat lamp",
-            type = TerrariumType.Desert,
+            type = DragDrop.terraType.desert,
             criteria = new List<string> { "2 Desert plants", "1 Heat lamp" },
             criteriaOptional = new List<string> { "Deko: Skull", "Desert stone" }
         },
@@ -28,7 +28,7 @@ public static class TaskDatabase
             "Best Regards,\n" +
             "FrogLover from FroggyStyle",
             description = "Rainforest ambience with lots of humidity and plants",
-            type = TerrariumType.Rainforest,
+            type = DragDrop.terraType.rainforest,
             criteria = new List<string> { "2 Rainforest plants", "1 Smoke machine" },
             criteriaOptional = new List<string> { "Moss", "Background picture" }
         }

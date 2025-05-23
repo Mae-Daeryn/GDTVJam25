@@ -7,13 +7,14 @@ public class Habitat : MonoBehaviour
     public bool Rainforest;
     public bool Desert;
     public bool Water;
+    public int Multiplier;
 
-    public TerrariumType[] ToTypes()
+    public DragDrop.terraType[] ToTypes()
     {
-        var types = new List<TerrariumType>();
-        if (Rainforest) types.Add(TerrariumType.Rainforest);
-        if (Desert) types.Add(TerrariumType.Desert);
-        if (Water) types.Add(TerrariumType.Water);
+        var types = new List<DragDrop.terraType>();
+        if (Rainforest) types.Add(DragDrop.terraType.rainforest);
+        if (Desert) types.Add(DragDrop.terraType.desert);
+        if (Water) types.Add(DragDrop.terraType.water);
         return types.ToArray();
     }
 

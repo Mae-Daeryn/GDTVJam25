@@ -9,7 +9,7 @@ public class Task
     public string sendermail;
     public string mailContent;
 
-    public TerrariumType type;
+    public DragDrop.terraType type;
     public List<string> criteria;
     public List<string> criteriaOptional;
 }
