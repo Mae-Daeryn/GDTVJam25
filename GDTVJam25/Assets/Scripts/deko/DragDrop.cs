@@ -12,10 +12,13 @@ public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
     public GameObject edit;
     public TextMeshProUGUI coins;
     public int costs;
+
+
     public enum terraType
     {
         rainforest, desert, water
     }
+
     public terraType type;
 
     private void Awake()

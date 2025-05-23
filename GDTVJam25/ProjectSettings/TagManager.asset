@@ -8,7 +8,7 @@ TagManager:
   - used_Items
   - desert
   - rainforest
-  - axolotl
+  - water
   layers:
   - Default
   - TransparentFX
