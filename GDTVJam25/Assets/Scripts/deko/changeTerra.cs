@@ -28,12 +28,15 @@ public class changeTerra : MonoBehaviour, IPointerClickHandler
             {
                 case "Agame-terra_0":
                     TerraPanel.GetComponent<Image>().sprite = Rainforest_Terra;
+                    TerraPanel.tag = "rainforest";
                     break;
                 case "axolotl-terra_0":
                     TerraPanel.GetComponent<Image>().sprite = Desert_Terra;
+                    TerraPanel.tag = "desert";
                     break;
                 case "gecko-terra_0":
                     TerraPanel.GetComponent<Image>().sprite = Water_Terra;
+                    TerraPanel.tag = "water";
                     break;
             }
 
@@ -44,12 +47,15 @@ public class changeTerra : MonoBehaviour, IPointerClickHandler
             {
                 case "Agame-terra_0":
                     TerraPanel.GetComponent<Image>().sprite = Water_Terra;
+                    TerraPanel.tag = "water";
                     break;
                 case "axolotl-terra_0":
                     TerraPanel.GetComponent<Image>().sprite = Rainforest_Terra;
+                    TerraPanel.tag = "rainforest";
                     break;
                 case "gecko-terra_0":
                     TerraPanel.GetComponent<Image>().sprite = Desert_Terra;
+                    TerraPanel.tag = "desert";
                     break;
             }
         }
