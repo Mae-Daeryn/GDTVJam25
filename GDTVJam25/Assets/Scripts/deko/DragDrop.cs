@@ -12,6 +12,11 @@ public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
     public GameObject edit;
     public TextMeshProUGUI coins;
     public int costs;
+    public enum terraType
+    {
+        rainforest, desert, water
+    }
+    public terraType type;
 
     private void Awake()
     {
@@ -38,6 +43,21 @@ public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
                 for (int i = rectTransform.childCount - 1; i >= 0; i--)
                 {
                     GameObject.Destroy(rectTransform.GetChild(i).gameObject);
+                }
+
+                if(type == terraType.desert)
+                {
+                    rectTransform.tag = "desert";
+                }
+
+                if (type == terraType.rainforest)
+                {
+                    rectTransform.tag = "rainforest";
+                }
+
+                if (type == terraType.water)
+                {
+                    rectTransform.tag = "water";
                 }
 
             }

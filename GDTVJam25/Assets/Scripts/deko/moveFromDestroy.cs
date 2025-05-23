@@ -14,7 +14,6 @@ public class moveFromDestroy : MonoBehaviour
             if (child.name.Contains("item"))
             {
                 child.SetParent(dropzone.transform, false);
-                DontDestroyOnLoad(gameObject.)
             }
         }
     }
