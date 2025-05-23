@@ -35,6 +35,11 @@ public class SubmitJob : MonoBehaviour
         {
             sum /= 2;
         }
+        MoneyManager.Money += 100;
+        if (sum > 100)
+        {
+            MoneyManager.Money += 50;
+        }
         Debug.Log(TerraPanel.tag);
         Debug.Log(target.ToString());
         Debug.Log(sum);
