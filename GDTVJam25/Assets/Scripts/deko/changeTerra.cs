@@ -21,27 +21,36 @@ public class changeTerra : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (this.transform.name == "terra_left")
+        if (transform.name == "terra_left")
         {
-            if (TerraPanel.GetComponent<Image>().sprite.name.Contains("Agame"))
+            Debug.Log(Rainforest_Terra.name);
+            switch (TerraPanel.GetComponent<Image>().sprite.name)
             {
-                TerraPanel.GetComponent<Image>().sprite = Rainforest_Terra;
+                case "Agame-terra_0":
+                    TerraPanel.GetComponent<Image>().sprite = Rainforest_Terra;
+                    break;
+                case "axolotl-terra_0":
+                    TerraPanel.GetComponent<Image>().sprite = Desert_Terra;
+                    break;
+                case "gecko-terra_0":
+                    TerraPanel.GetComponent<Image>().sprite = Water_Terra;
+                    break;
             }
-            if (TerraPanel.GetComponent<Image>().sprite.name.Contains("axolotl"))
-            {
-                TerraPanel.GetComponent<Image>().sprite = Desert_Terra;
-            }
-            
+
         }
-        if (this.transform.name == "terra_right")
+        if (transform.name == "terra_right")
         {
-            if (TerraPanel.GetComponent<Image>().sprite.name.Contains("Agame"))
+            switch (TerraPanel.GetComponent<Image>().sprite.name)
             {
-                TerraPanel.GetComponent<Image>().sprite = Water_Terra;
-            }
-            if (TerraPanel.GetComponent<Image>().sprite.name.Contains("gecko"))
-            {
-                TerraPanel.GetComponent<Image>().sprite = Desert_Terra;
+                case "Agame-terra_0":
+                    TerraPanel.GetComponent<Image>().sprite = Water_Terra;
+                    break;
+                case "axolotl-terra_0":
+                    TerraPanel.GetComponent<Image>().sprite = Rainforest_Terra;
+                    break;
+                case "gecko-terra_0":
+                    TerraPanel.GetComponent<Image>().sprite = Desert_Terra;
+                    break;
             }
         }
 
