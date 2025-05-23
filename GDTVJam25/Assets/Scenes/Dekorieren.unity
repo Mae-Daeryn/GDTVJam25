@@ -1540,6 +1540,7 @@ MonoBehaviour:
   parentObject: {fileID: 1071991969}
   excludeObjects:
   - {fileID: 1011922742}
+  target: 1
 --- !u!1 &896041827
 GameObject:
   m_ObjectHideFlags: 0
