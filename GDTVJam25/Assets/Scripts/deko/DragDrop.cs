@@ -10,7 +10,6 @@ public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
     private RectTransform rectTransform;
     public RectTransform dropzone;
     public GameObject edit;
-    public TextMeshProUGUI coins;
     public int costs;
 
 
@@ -32,14 +31,13 @@ public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
 
         if (rectTransform.tag == "Items")
         {
-            if (int.Parse(coins.text) >= costs)
+            if (MoneyManager.Money >= costs)
             {
-                int newcoins = int.Parse(coins.text) - costs;
-                coins.text = newcoins.ToString();
+                MoneyManager.Money -= costs;
                 RectTransform clone = Instantiate(rectTransform, rectTransform.parent);
                 rectTransform.name = clone.name;
                 Transform[] children = rectTransform.GetComponentsInChildren<Transform>(true);
-                
+
                 clone.name = "item";
                 rectTransform.tag = "used_Items";
 
@@ -48,7 +46,7 @@ public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
                     GameObject.Destroy(rectTransform.GetChild(i).gameObject);
                 }
 
-                if(type == terraType.desert)
+                if (type == terraType.desert)
                 {
                     rectTransform.tag = "desert";
                 }
@@ -94,8 +92,7 @@ public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
             if (!RectTransformUtility.RectangleContainsScreenPoint(dropzone, Input.mousePosition, eventData.pressEventCamera))
             {
                 Destroy(rectTransform.gameObject);
-                int newcoins = int.Parse(coins.text) + costs;
-                coins.text = newcoins.ToString();
+                MoneyManager.Money += costs;
                 Vector3 pos = edit.transform.position;
                 pos.y = -1000f;
                 edit.transform.position = pos;
@@ -107,5 +104,5 @@ public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
     {
     }
 
-    
+
 }
