@@ -45,13 +45,14 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
                 sender.text = task.sendermail;
                 subject.text = task.subject;
                 selected = task;
+                Debug.Log(task.subject);
             }
         }
-        taskButtonPrefab.transform.position = new Vector3(taskButtonPrefab.transform.position.x + 10000, 0, 0);
+        taskButtonPrefab.transform.position = new Vector3(taskButtonPrefab.transform.position.x + 10000, taskButtonPrefab.transform.position.y, 0);
 
         if(TaskDatabase.currentTask == null)
         {
-            SideQuest.transform.position = new Vector3(SideQuest.transform.position.x + 10000, 0, 0);
+            SideQuest.transform.position = new Vector3(SideQuest.transform.position.x + 10000, SideQuest.transform.position.y, 0);
         }
         else
         {

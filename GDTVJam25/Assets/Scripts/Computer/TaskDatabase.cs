@@ -13,7 +13,7 @@ public static class TaskDatabase
             "I need a Tank for a Bearded Dragon.\n" +
             "Thanks,\n" +
             "Margaret",
-            description = "A customer wants to build a terrarium for a Bearded Dragon. He wants to have at least 1 desert plant and 1 heat lamp",
+            description = "Build a Desert Terrarium for a Bearded Dragon",
             type = DragDrop.terraType.desert,
             criteria = new List<string> { "2 Desert plants", "1 Heat lamp" },
             criteriaOptional = new List<string> { "Deko: Skull", "Desert stone" }
