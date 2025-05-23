@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Agame-terra_0: -6057519973998947702
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

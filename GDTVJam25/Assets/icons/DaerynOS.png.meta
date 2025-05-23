@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DaerynOS_0: -1899868563932885901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

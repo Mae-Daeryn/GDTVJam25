@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      axolotl-terra_0: 870617621408226061
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

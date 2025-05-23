@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gecko-terra_0: 4446013776051505778
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

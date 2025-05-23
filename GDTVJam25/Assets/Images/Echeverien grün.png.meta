@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Echeverien gr\xFCn_0": -1112281389039264977
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
