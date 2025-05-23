@@ -1,21 +1,32 @@
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using static UnityEngine.UI.Button;
 
-public class accept_quest : MonoBehaviour, IPointerDownHandler
+public class accept_quest : MonoBehaviour
 {
-   
-    public void OnPointerDown(PointerEventData eventData)
+
+    public Button accept;
+    public GameObject manager;
+
+    void Start()
     {
-        if(GameObject.Find("quest") != null)
+        accept.onClick.AddListener(OnButtonClick);
+    }
+
+    void OnButtonClick()
+    {
+        if(TaskDatabase.currentTask != null)
         {
-            GameObject quest = GameObject.Find("quest");
+            ComputerUIManager mng = manager.GetComponent<ComputerUIManager>();
+            mng.selected = TaskDatabase.currentTask;
+        }
+        else
+        {
+
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

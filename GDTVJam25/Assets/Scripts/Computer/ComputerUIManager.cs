@@ -22,6 +22,11 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
     private Dictionary<GameObject, Task> mails = new Dictionary<GameObject, Task>();
     public RectTransform canvas;
     public TextMeshProUGUI TIME;
+    public GameObject SideQuestNone;
+    public GameObject SideQuest;
+    public TextMeshProUGUI SideTitle;
+    public TextMeshProUGUI SideDescription;
+    public Task selected;
     void Start()
     {
         int currentEntry = -1;
@@ -39,22 +44,27 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
                 descriptionText.text = task.mailContent;
                 sender.text = task.sendermail;
                 subject.text = task.subject;
+                selected = task;
             }
         }
         taskButtonPrefab.transform.position = new Vector3(taskButtonPrefab.transform.position.x + 10000, 0, 0);
 
-        if (GameObject.Find("quest") != null)
+        if(TaskDatabase.currentTask == null)
         {
-            GameObject quest = GameObject.Find("quest");
-            quest.transform.position = new Vector3(0, 0, 0);
-            quest.transform.SetParent(canvas);
+            SideQuest.transform.position = new Vector3(SideQuest.transform.position.x + 10000, 0, 0);
         }
-        TIME.text = System.DateTime.Now.ToString();
+        else
+        {
+            SideDescription.text = TaskDatabase.currentTask.subject;
+            SideTitle.text = TaskDatabase.currentTask.description;
+            SideQuestNone.transform.position = new Vector3(SideQuestNone.transform.position.x + 10000, 0, 0);
+        }
+            TIME.text = System.DateTime.Now.ToString();
     }
 
     private void Update()
     {
-        TIME.text = System.DateTime.Now.ToString();
+        //TIME.text = System.DateTime.Now.ToString();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -70,6 +80,7 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
                     sender.text = t.sendermail;
                     subject.text = t.subject;
                     mail.Key.GetComponent<Image>().color = Color.white;
+                    selected = t;
                 }
                 else
                 {
@@ -87,6 +98,7 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
                 descriptionText.text = t.mailContent;
                 sender.text = t.sendermail;
                 subject.text = t.subject;
+                selected = t;
                 foreach (var allmail in mails)
                 {
                     allmail.Key.GetComponent<Image>().color = new Color((float)180 / 255, (float)180 / 255, (float)180 / 255);

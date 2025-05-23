@@ -33,4 +33,15 @@ public static class TaskDatabase
             criteriaOptional = new List<string> { "Moss", "Background picture" }
         }
     };
+
+    public static Task currentTask;
+    public static List<Task> ReturnAll()
+    {
+        return All;
+    }
+
+    public static void RemoveTask(Task task)
+    {
+        All.Remove(task);
+    }
 }

@@ -15,6 +15,7 @@ public class toComputer : MonoBehaviour, IPointerDownHandler
         {
             GameObject quest = GameObject.Find("quest");
             quest.gameObject.transform.SetParent(null);
+            TaskDatabase.RemoveTask(TaskDatabase.All[1]);
             DontDestroyOnLoad(quest);
         }
         SceneManager.LoadScene(0);
