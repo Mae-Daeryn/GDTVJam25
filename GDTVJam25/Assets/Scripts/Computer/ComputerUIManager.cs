@@ -45,8 +45,9 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
 
         if (GameObject.Find("quest") != null)
         {
-            GameObject.Find("quest").transform.SetParent(canvas);
             GameObject quest = GameObject.Find("quest");
+            quest.transform.position = new Vector3(0, 0, 0);
+            quest.transform.SetParent(canvas);
         }
         TIME.text = System.DateTime.Now.ToString();
     }

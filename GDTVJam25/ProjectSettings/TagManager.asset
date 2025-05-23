@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Items
   - used_Items
+  - desert
+  - rainforest
+  - axolotl
   layers:
   - Default
   - TransparentFX

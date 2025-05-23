@@ -1,57 +1,82 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using static Unity.VisualScripting.Metadata;
 
 public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     private RectTransform rectTransform;
     public RectTransform dropzone;
     public GameObject edit;
+    public TextMeshProUGUI coins;
+    public int costs;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
     }
 
+
     public void OnBeginDrag(PointerEventData eventData)
     {
 
         if (rectTransform.tag == "Items")
         {
-            RectTransform clone = Instantiate(rectTransform, rectTransform.parent);
-            rectTransform.name = clone.name;
-            clone.name = "item";
-            rectTransform.tag = "used_Items";
+            if (int.Parse(coins.text) >= costs)
+            {
+                int newcoins = int.Parse(coins.text) - costs;
+                coins.text = newcoins.ToString();
+                RectTransform clone = Instantiate(rectTransform, rectTransform.parent);
+                rectTransform.name = clone.name;
+                Transform[] children = rectTransform.GetComponentsInChildren<Transform>(true);
+                
+                clone.name = "item";
+                rectTransform.tag = "used_Items";
 
+                for (int i = rectTransform.childCount - 1; i >= 0; i--)
+                {
+                    GameObject.Destroy(rectTransform.GetChild(i).gameObject);
+                }
+
+            }
         }
-        rectTransform.transform.SetParent(dropzone);
-
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        Vector3 MousePos = Input.mousePosition;
-        rectTransform.position = MousePos;
-
-        if(rectTransform.transform.parent == dropzone)
+        if (rectTransform.tag != "Items")
         {
-            edit.transform.position = rectTransform.gameObject.transform.position;
-            Vector3 pos = edit.transform.position;
-            pos.y = rectTransform.transform.position.y + 100f;
-            edit.transform.position = pos;
+            Vector3 MousePos = Input.mousePosition;
+            rectTransform.position = MousePos;
+
+            if (rectTransform.transform.parent == dropzone)
+            {
+                edit.transform.position = rectTransform.gameObject.transform.position;
+                Vector3 pos = edit.transform.position;
+                pos.y = rectTransform.transform.position.y + 100f;
+                edit.transform.position = pos;
+            }
         }
 
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Image image = rectTransform.GetComponent<Image>();
-        if(!RectTransformUtility.RectangleContainsScreenPoint(dropzone, Input.mousePosition, eventData.pressEventCamera)) {
-            Destroy(rectTransform.gameObject);
-            Vector3 pos = edit.transform.position;
-            pos.y = -1000f;
-            edit.transform.position = pos;
+        if (rectTransform.tag != "Items")
+        {
+            rectTransform.transform.SetParent(dropzone);
+            Image image = rectTransform.GetComponent<Image>();
+            if (!RectTransformUtility.RectangleContainsScreenPoint(dropzone, Input.mousePosition, eventData.pressEventCamera))
+            {
+                Destroy(rectTransform.gameObject);
+                int newcoins = int.Parse(coins.text) + costs;
+                coins.text = newcoins.ToString();
+                Vector3 pos = edit.transform.position;
+                pos.y = -1000f;
+                edit.transform.position = pos;
+            }
         }
     }
 

@@ -15,6 +15,22 @@ public class toRaumAnsicht : MonoBehaviour, IPointerClickHandler
             quest.gameObject.transform.SetParent(null);
             DontDestroyOnLoad(quest);
         }
+        if(SceneManager.GetActiveScene().name == "Dekorieren")
+        {
+            Transform dropZone = GameObject.Find("DropZone").transform;
+
+
+            for (int i = dropZone.childCount - 1; i >= 0; i--)
+            {
+                Transform child = dropZone.GetChild(i);
+
+                if (child.name != "edit")
+                {
+                    child.SetParent(null);
+                    DontDestroyOnLoad(child.gameObject);
+                }
+            }
+        }
         SceneManager.LoadScene(3);
     }
 }
