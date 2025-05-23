@@ -10,7 +10,7 @@ public class SubmitJob : MonoBehaviour
     public GameObject parentObject;
     public GameObject[] excludeObjects;
     public DragDrop.terraType target;
-
+    public GameObject TerraPanel;
     void Start()
     {
         button.onClick.AddListener(ButtonClicked);
@@ -26,6 +26,17 @@ public class SubmitJob : MonoBehaviour
             Habitat h = child.GetComponent<Habitat>();
             sum += h.GetScore(target);
         }
+        if (TerraPanel.CompareTag(target.ToString()))
+        {
+
+            sum *= 2;
+        }
+        else
+        {
+            sum /= 2;
+        }
+        Debug.Log(TerraPanel.tag);
+        Debug.Log(target.ToString());
         Debug.Log(sum);
     }
 }
