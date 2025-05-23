@@ -9,12 +9,6 @@ public class toRaumAnsicht : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
 
-        if(GameObject.Find("quest") != null)
-        {
-            GameObject quest = GameObject.Find("quest");
-            quest.gameObject.transform.SetParent(null);
-            DontDestroyOnLoad(quest);
-        }
         if(SceneManager.GetActiveScene().name == "Dekorieren")
         {
             Transform dropZone = GameObject.Find("DropZone").transform;

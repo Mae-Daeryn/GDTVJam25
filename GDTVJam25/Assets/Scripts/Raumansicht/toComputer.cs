@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -8,16 +9,30 @@ public class toComputer : MonoBehaviour, IPointerDownHandler
 {
 
 
+    public GameObject SideQuestNone;
+    public GameObject SideQuest;
+    public TextMeshProUGUI SideTitle;
+    public TextMeshProUGUI SideDescription;
+
+    void Start()
+    {
+        if (TaskDatabase.currentTask == null)
+        {
+            SideQuest.transform.position = new Vector3(SideQuest.transform.position.x + 10000, SideQuest.transform.position.y, 0);
+        }
+        else
+        {
+            SideDescription.text = TaskDatabase.currentTask.description;
+            SideTitle.text = TaskDatabase.currentTask.subject;
+            SideQuestNone.transform.position = new Vector3(SideQuestNone.transform.position.x + 10000, 0, 0);
+        }
+    }
+
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (GameObject.Find("quest") != null)
-        {
-            GameObject quest = GameObject.Find("quest");
-            quest.transform.SetParent(null);
-            DontDestroyOnLoad(quest);
-            Debug.Log(TaskDatabase.currentTask.ToString());
-        }
+        
+ 
         SceneManager.LoadScene(0);
     }
 

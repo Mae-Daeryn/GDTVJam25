@@ -56,8 +56,8 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
         }
         else
         {
-            SideDescription.text = TaskDatabase.currentTask.subject;
-            SideTitle.text = TaskDatabase.currentTask.description;
+            SideDescription.text = TaskDatabase.currentTask.description;
+            SideTitle.text = TaskDatabase.currentTask.subject;
             SideQuestNone.transform.position = new Vector3(SideQuestNone.transform.position.x + 10000, 0, 0);
         }
             TIME.text = System.DateTime.Now.ToString();
