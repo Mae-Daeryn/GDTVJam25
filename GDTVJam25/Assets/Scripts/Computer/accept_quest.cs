@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using static UnityEngine.EventSystems.EventTrigger;
 using static UnityEngine.UI.Button;
 
 public class accept_quest : MonoBehaviour
@@ -29,10 +30,12 @@ public class accept_quest : MonoBehaviour
 
             mng.SideDescription.text = TaskDatabase.currentTask.description;
             mng.SideTitle.text = TaskDatabase.currentTask.subject;
+
+
+            this.gameObject.GetComponent<Image>().color = new Color((float)171 / 255, (float)171 / 255, (float)171 / 255);
         }
         else
         {
-            
         }
     }
 

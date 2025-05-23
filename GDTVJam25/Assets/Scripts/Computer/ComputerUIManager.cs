@@ -27,6 +27,7 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
     public TextMeshProUGUI SideTitle;
     public TextMeshProUGUI SideDescription;
     public Task selected;
+    public GameObject button;
     void Start()
     {
         int currentEntry = -1;
@@ -56,6 +57,7 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
         }
         else
         {
+            button.GetComponent<Image>().color = new Color((float)171 / 255, (float)171 / 255, (float)171 / 255);
             SideDescription.text = TaskDatabase.currentTask.description;
             SideTitle.text = TaskDatabase.currentTask.subject;
             SideQuestNone.transform.position = new Vector3(SideQuestNone.transform.position.x + 10000, 0, 0);

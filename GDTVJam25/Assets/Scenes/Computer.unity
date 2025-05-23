@@ -1409,6 +1409,7 @@ MonoBehaviour:
     type: 0
     criteria: []
     criteriaOptional: []
+  button: {fileID: 0}
 --- !u!1 &594078227
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,6 +1474,7 @@ MonoBehaviour:
     type: 0
     criteria: []
     criteriaOptional: []
+  button: {fileID: 0}
 --- !u!1 &603489345
 GameObject:
   m_ObjectHideFlags: 0
@@ -2459,6 +2461,7 @@ MonoBehaviour:
     type: 0
     criteria: []
     criteriaOptional: []
+  button: {fileID: 1110863486}
 --- !u!1 &1045384258
 GameObject:
   m_ObjectHideFlags: 0
@@ -3841,15 +3844,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 816094563938723910, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_Color.b
-      value: 0.6698113
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 816094563938723910, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_Color.g
-      value: 0.6698113
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 816094563938723910, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_Color.r
-      value: 0.6698113
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 948319466660873085, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_Name
