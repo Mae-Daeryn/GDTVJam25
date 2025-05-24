@@ -1,7 +1,5 @@
-using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class select : MonoBehaviour, IPointerDownHandler
 {
@@ -52,20 +50,20 @@ public class select : MonoBehaviour, IPointerDownHandler
             Debug.Log("test");
             if (selected != eventData.pointerCurrentRaycast.gameObject)
             {
-                if(eventData.pointerCurrentRaycast.gameObject != edit)
+                if (eventData.pointerCurrentRaycast.gameObject != edit)
                 {
-                if (selected != null)
-                {
-                    selected = null;
+                    if (selected != null)
+                    {
+                        selected = null;
+                    }
+                    selected = eventData.pointerPressRaycast.gameObject;
+                    edit.transform.position = selected.gameObject.transform.position;
+                    Vector3 pos = edit.transform.position;
+                    pos.y = selected.transform.position.y + 100f;
+                    edit.transform.position = pos;
                 }
-                selected = eventData.pointerPressRaycast.gameObject;
-                edit.transform.position = selected.gameObject.transform.position;
-                Vector3 pos = edit.transform.position;
-                pos.y = selected.transform.position.y + 100f;
-                edit.transform.position = pos;
-            }
 
-            
+
 
 
             }

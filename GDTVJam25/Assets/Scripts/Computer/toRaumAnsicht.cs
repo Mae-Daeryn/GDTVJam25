@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -9,7 +8,7 @@ public class toRaumAnsicht : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
 
-        if(SceneManager.GetActiveScene().name == "Dekorieren")
+        if (SceneManager.GetActiveScene().name == "Dekorieren")
         {
             Transform dropZone = GameObject.Find("DropZone").transform;
 

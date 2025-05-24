@@ -1,9 +1,6 @@
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using static Unity.VisualScripting.Metadata;
 
 public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
@@ -88,7 +85,7 @@ public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
     {
         if (rectTransform.tag != "Items")
         {
-            if(rectTransform.transform.parent != dropzone)
+            if (rectTransform.transform.parent != dropzone)
             {
 
                 rectTransform.transform.SetParent(dropzone);

@@ -1,11 +1,5 @@
-using System.Collections.Generic;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using static UnityEngine.EventSystems.EventTrigger;
-using static UnityEngine.UI.Button;
 
 public class accept_quest : MonoBehaviour
 {
@@ -20,7 +14,7 @@ public class accept_quest : MonoBehaviour
 
     void OnButtonClick()
     {
-        if(TaskDatabase.currentTask == null)
+        if (TaskDatabase.currentTask == null)
         {
             ComputerUIManager mng = manager.GetComponent<ComputerUIManager>();
             TaskDatabase.currentTask = mng.selected;
