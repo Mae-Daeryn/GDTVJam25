@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bromelie_0: -3097602022372831280
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
