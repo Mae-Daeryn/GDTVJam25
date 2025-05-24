@@ -38,6 +38,7 @@ public class SubmitJob : MonoBehaviour
             Destroy(child);
         }
         MoneyManager.Money += 100;
+        TaskDatabase.currentTask = null;
         SceneManager.LoadScene(3);
         // Panel: Abgegeben
         Debug.Log($"{ScoreManager.score}");
