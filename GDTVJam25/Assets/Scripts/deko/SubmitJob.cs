@@ -14,6 +14,13 @@ public class SubmitJob : MonoBehaviour
     {
         button.onClick.AddListener(ButtonClicked);
     }
+    void Update()
+    {
+        var task = TaskDatabase.currentTask;
+        if (task == null) gameObject.GetComponent<Image>().color = new Color((float)171 / 255, (float)171 / 255, (float)171 / 255);
+        else gameObject.GetComponent<Image>().color = new Color((float)240 / 255, (float)240 / 255, (float)240 / 255);
+    }
+
 
     void ButtonClicked()
     {
@@ -42,5 +49,7 @@ public class SubmitJob : MonoBehaviour
         SceneManager.LoadScene(3);
         // Panel: Abgegeben
         Debug.Log($"{ScoreManager.score}");
+
+
     }
 }

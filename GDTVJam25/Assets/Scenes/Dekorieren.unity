@@ -2899,7 +2899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 0.3764706}
+  m_Color: {r: 0.67058825, g: 0.67058825, b: 0.67058825, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2940,7 +2940,6 @@ MonoBehaviour:
   parentObject: {fileID: 1071991969}
   excludeObjects:
   - {fileID: 1011922742}
-  TerraPanel: {fileID: 1582138426}
 --- !u!1 &896041827
 GameObject:
   m_ObjectHideFlags: 0
