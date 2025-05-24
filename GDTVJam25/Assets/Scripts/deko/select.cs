@@ -30,6 +30,14 @@ public class select : MonoBehaviour, IPointerDownHandler
             Vector3 posi = edit.transform.position;
             posi.y = -1000f;
             edit.transform.position = posi;
+            MoneyManager.Money += selected.GetComponent<DragDrop>().costs;
+        }
+        if (eventData.pointerCurrentRaycast.gameObject == this.gameObject)
+        {
+            Vector3 pos = edit.transform.position;
+            pos.y = -1000f;
+            edit.transform.position = pos;
+            selected = null;
         }
         else if (eventData.pointerCurrentRaycast.gameObject == rotate_left)
         {
