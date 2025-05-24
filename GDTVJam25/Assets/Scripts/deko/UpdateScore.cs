@@ -18,12 +18,13 @@ public class UpdateScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (TaskDatabase.currentTask == null)
+        var task = TaskDatabase.currentTask;
+        if (task == null)
         {
-            scoreObject.text = "0";
+            scoreObject.text = "Select a Job";
             return;
         }
-        var target = TaskDatabase.currentTask.type;
+        var target = task.type;
         long sum = 0;
         for (int i = 0; i < parentObject.transform.childCount; i++)
         {
@@ -41,6 +42,6 @@ public class UpdateScore : MonoBehaviour
         {
             sum /= 2;
         }
-        scoreObject.text = $"{sum}";
+        scoreObject.text = $"{sum}/{task.requiredScore}";
     }
 }
