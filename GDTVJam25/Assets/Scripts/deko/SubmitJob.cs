@@ -45,6 +45,7 @@ public class SubmitJob : MonoBehaviour
             Destroy(child);
         }
         MoneyManager.Money += 100;
+        TaskDatabase.RemoveTask(TaskDatabase.currentTask);
         TaskDatabase.currentTask = null;
         SceneManager.LoadScene(3);
         // Panel: Abgegeben
