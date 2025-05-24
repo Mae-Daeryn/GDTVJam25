@@ -1,16 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using TMPro;
-using Unity.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using static UnityEngine.EventSystems.EventTrigger;
-using System;
 
 public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
 {
@@ -35,9 +27,9 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
         {
             currentEntry++;
             GameObject entry = Instantiate(taskButtonPrefab, contentParent);
-            entry.transform.position = new Vector3(taskButtonPrefab.transform.position.x, taskButtonPrefab.transform.position.y - (currentEntry * 100), 0);
+            entry.transform.position = new Vector3(taskButtonPrefab.transform.position.x, taskButtonPrefab.transform.position.y - (currentEntry * 150), 0);
             entry.GetComponent<TaskEntryUI>().Setup(task, this);
-            entry.GetComponent<Image>().color = new Color((float)180/255, (float)180 / 255, (float)180 / 255);
+            entry.GetComponent<Image>().color = new Color((float)180 / 255, (float)180 / 255, (float)180 / 255);
             mails.Add(entry, task);
             if (currentEntry == 0)
             {
@@ -51,7 +43,7 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
         }
         taskButtonPrefab.transform.position = new Vector3(taskButtonPrefab.transform.position.x + 10000, taskButtonPrefab.transform.position.y, 0);
 
-        if(TaskDatabase.currentTask == null)
+        if (TaskDatabase.currentTask == null)
         {
             SideQuest.transform.position = new Vector3(SideQuest.transform.position.x + 10000, SideQuest.transform.position.y, 0);
         }
@@ -62,7 +54,7 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
             SideTitle.text = TaskDatabase.currentTask.subject;
             SideQuestNone.transform.position = new Vector3(SideQuestNone.transform.position.x + 10000, 0, 0);
         }
-            TIME.text = System.DateTime.Now.ToString();
+        TIME.text = System.DateTime.Now.ToString();
     }
 
     private void Update()
@@ -92,11 +84,11 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
                 }
             }
         }
-        else if(mails.ContainsKey(eventData.pointerCurrentRaycast.gameObject.transform.parent.gameObject))
+        else if (mails.ContainsKey(eventData.pointerCurrentRaycast.gameObject.transform.parent.gameObject))
         {
             GameObject mail = eventData.pointerCurrentRaycast.gameObject.transform.parent.gameObject;
-            if(mails.TryGetValue(mail, out Task task))
-                {
+            if (mails.TryGetValue(mail, out Task task))
+            {
                 Task t = task;
                 descriptionText.text = t.mailContent;
                 sender.text = t.sendermail;
@@ -106,7 +98,7 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
                 {
                     allmail.Key.GetComponent<Image>().color = new Color((float)180 / 255, (float)180 / 255, (float)180 / 255);
                 }
-                    mail.GetComponent<Image>().color = Color.white;
+                mail.GetComponent<Image>().color = Color.white;
             }
 
         }
