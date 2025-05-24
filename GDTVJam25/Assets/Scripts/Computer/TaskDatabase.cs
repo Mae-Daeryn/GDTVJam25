@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine.SocialPlatforms.Impl;
 
 public static class TaskDatabase
 {
@@ -15,8 +16,7 @@ public static class TaskDatabase
             "Margaret",
             description = "Build a Desert Terrarium for a Bearded Dragon",
             type = DragDrop.terraType.desert,
-            criteria = new List<string> { "2 Desert plants", "1 Heat lamp" },
-            criteriaOptional = new List<string> { "Deko: Skull", "Desert stone" }
+            requiredScore = ScoreManager.score
         },
         new Task
         {
@@ -29,8 +29,7 @@ public static class TaskDatabase
             "FrogLover from FroggyStyle",
             description = "Rainforest ambience with lots of humidity and plants",
             type = DragDrop.terraType.rainforest,
-            criteria = new List<string> { "2 Rainforest plants", "1 Smoke machine" },
-            criteriaOptional = new List<string> { "Moss", "Background picture" }
+            requiredScore = ScoreManager.score
         }
     };
 
