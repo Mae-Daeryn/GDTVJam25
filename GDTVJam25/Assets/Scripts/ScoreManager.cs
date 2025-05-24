@@ -2,5 +2,5 @@ using UnityEngine;
 
 public static class ScoreManager
 {
-    public static int score = 0;
+    public static long score = 0;
 }
