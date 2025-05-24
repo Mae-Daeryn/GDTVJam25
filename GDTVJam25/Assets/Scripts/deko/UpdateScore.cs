@@ -42,6 +42,7 @@ public class UpdateScore : MonoBehaviour
         {
             sum /= 2;
         }
+        ScoreManager.score = sum;
         scoreObject.text = $"{sum}/{task.requiredScore}";
     }
 }
