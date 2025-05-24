@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tillandsie_0: -9150818094146666813
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

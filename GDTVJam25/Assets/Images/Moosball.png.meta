@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Moosball_0: 1229224218374478515
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

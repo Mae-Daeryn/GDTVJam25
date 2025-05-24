@@ -9,7 +9,6 @@ public class SubmitJob : MonoBehaviour
     public Button button;
     public GameObject parentObject;
     public GameObject[] excludeObjects;
-    public DragDrop.terraType target;
     public GameObject TerraPanel;
     void Start()
     {
@@ -18,6 +17,13 @@ public class SubmitJob : MonoBehaviour
 
     void ButtonClicked()
     {
+        if (TaskDatabase.currentTask == null)
+        {
+            // Hier Panel oder so zum bescheid geben öffnen, dass der User noch kein Task ausgewählt hat
+            return;
+        }
+        var target = TaskDatabase.currentTask.type;
+
         long sum = 0;
         for (int i = 0; i < parentObject.transform.childCount; i++)
         {
