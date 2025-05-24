@@ -25,6 +25,6 @@ public class toRaumAnsicht : MonoBehaviour, IPointerClickHandler
                 }
             }
         }
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(0);
     }
 }

@@ -1,8 +1,10 @@
 using System.Collections.Generic;
+using System.Linq;
 
 public static class TaskDatabase
 {
-    public static List<Task> All = new List<Task>
+
+    public static List<Task> All = new()
     {
         new Task
         {
@@ -29,8 +31,158 @@ public static class TaskDatabase
             description = "Rainforest ambience with lots of humidity and plants",
             type = DragDrop.terraType.rainforest,
             requiredScore = 25
+        },
+        new Task
+        {
+            subject = "Frog-Terrarium",
+            sender = "froglover69",
+            sendermail = "froglover69@froggystyle.de",
+            mailContent = "Dear Terra-Building,\n" +
+            "pls make me a Frog Tank.\n" +
+            "Best Regards,\n" +
+            "FrogLover from FroggyStyle",
+            description = "Rainforest ambience with lots of humidity and plants",
+            type = DragDrop.terraType.rainforest,
+            requiredScore = 25
+        },
+        new Task
+        {
+            subject = "Frog-Terrarium",
+            sender = "froglover69",
+            sendermail = "froglover69@froggystyle.de",
+            mailContent = "Dear Terra-Building,\n" +
+            "pls make me a Frog Tank.\n" +
+            "Best Regards,\n" +
+            "FrogLover from FroggyStyle",
+            description = "Rainforest ambience with lots of humidity and plants",
+            type = DragDrop.terraType.rainforest,
+            requiredScore = 25
+        },
+        new Task
+        {
+            subject = "Frog-Terrarium",
+            sender = "froglover69",
+            sendermail = "froglover69@froggystyle.de",
+            mailContent = "Dear Terra-Building,\n" +
+            "pls make me a Frog Tank.\n" +
+            "Best Regards,\n" +
+            "FrogLover from FroggyStyle",
+            description = "Rainforest ambience with lots of humidity and plants",
+            type = DragDrop.terraType.rainforest,
+            requiredScore = 25
+        },
+        new Task
+        {
+            subject = "Frog-Terrarium",
+            sender = "froglover69",
+            sendermail = "froglover69@froggystyle.de",
+            mailContent = "Dear Terra-Building,\n" +
+            "pls make me a Frog Tank.\n" +
+            "Best Regards,\n" +
+            "FrogLover from FroggyStyle",
+            description = "Rainforest ambience with lots of humidity and plants",
+            type = DragDrop.terraType.rainforest,
+            requiredScore = 25
+        },
+        new Task
+        {
+            subject = "Frog-Terrarium",
+            sender = "froglover69",
+            sendermail = "froglover69@froggystyle.de",
+            mailContent = "Dear Terra-Building,\n" +
+            "pls make me a Frog Tank.\n" +
+            "Best Regards,\n" +
+            "FrogLover from FroggyStyle",
+            description = "Rainforest ambience with lots of humidity and plants",
+            type = DragDrop.terraType.rainforest,
+            requiredScore = 25
+        },
+        new Task
+        {
+            subject = "Frog-Terrarium",
+            sender = "froglover69",
+            sendermail = "froglover69@froggystyle.de",
+            mailContent = "Dear Terra-Building,\n" +
+            "pls make me a Frog Tank.\n" +
+            "Best Regards,\n" +
+            "FrogLover from FroggyStyle",
+            description = "Rainforest ambience with lots of humidity and plants",
+            type = DragDrop.terraType.rainforest,
+            requiredScore = 25
+        },
+        new Task
+        {
+            subject = "Frog-Terrarium",
+            sender = "froglover69",
+            sendermail = "froglover69@froggystyle.de",
+            mailContent = "Dear Terra-Building,\n" +
+            "pls make me a Frog Tank.\n" +
+            "Best Regards,\n" +
+            "FrogLover from FroggyStyle",
+            description = "Rainforest ambience with lots of humidity and plants",
+            type = DragDrop.terraType.rainforest,
+            requiredScore = 25
+        },
+        new Task
+        {
+            subject = "Frog-Terrarium",
+            sender = "froglover69",
+            sendermail = "froglover69@froggystyle.de",
+            mailContent = "Dear Terra-Building,\n" +
+            "pls make me a Frog Tank.\n" +
+            "Best Regards,\n" +
+            "FrogLover from FroggyStyle",
+            description = "Rainforest ambience with lots of humidity and plants",
+            type = DragDrop.terraType.rainforest,
+            requiredScore = 25
+        },
+        new Task
+        {
+            subject = "Frog-Terrarium",
+            sender = "froglover69",
+            sendermail = "froglover69@froggystyle.de",
+            mailContent = "Dear Terra-Building,\n" +
+            "pls make me a Frog Tank.\n" +
+            "Best Regards,\n" +
+            "FrogLover from FroggyStyle",
+            description = "Rainforest ambience with lots of humidity and plants",
+            type = DragDrop.terraType.rainforest,
+            requiredScore = 25
+        },
+        new Task
+        {
+            subject = "Frog-Terrarium",
+            sender = "froglover69",
+            sendermail = "froglover69@froggystyle.de",
+            mailContent = "Dear Terra-Building,\n" +
+            "pls make me a Frog Tank.\n" +
+            "Best Regards,\n" +
+            "FrogLover from FroggyStyle",
+            description = "Rainforest ambience with lots of humidity and plants",
+            type = DragDrop.terraType.rainforest,
+            requiredScore = 25
+        },
+        new Task
+        {
+            subject = "Frog-Terrarium",
+            sender = "froglover69",
+            sendermail = "froglover69@froggystyle.de",
+            mailContent = "Dear Terra-Building,\n" +
+            "pls make me a Frog Tank.\n" +
+            "Best Regards,\n" +
+            "FrogLover from FroggyStyle",
+            description = "Rainforest ambience with lots of humidity and plants",
+            type = DragDrop.terraType.rainforest,
+            requiredScore = 25
         }
     };
+
+    private static readonly Task[] AllCopied;
+    static TaskDatabase()
+    {
+        AllCopied = new Task[All.Count];
+        All.CopyTo(AllCopied);
+    }
 
     public static Task currentTask;
     public static List<Task> ReturnAll()
@@ -41,5 +193,6 @@ public static class TaskDatabase
     public static void RemoveTask(Task task)
     {
         All.Remove(task);
+        if (All.Count == 0) All = AllCopied.ToList();
     }
 }

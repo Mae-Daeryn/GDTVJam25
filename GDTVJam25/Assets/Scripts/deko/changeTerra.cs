@@ -22,7 +22,7 @@ public class changeTerra : MonoBehaviour, IPointerClickHandler
     {
         if (transform.name == "terra_left")
         {
-            Debug.Log(Rainforest_Terra.name);
+            // Debug.log(.*)
             switch (TerraPanel.GetComponent<Image>().sprite.name)
             {
                 case "Agame-terra_0":

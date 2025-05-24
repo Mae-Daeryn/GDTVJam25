@@ -31,7 +31,7 @@ public class toComputer : MonoBehaviour, IPointerDownHandler
     {
 
 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
 }

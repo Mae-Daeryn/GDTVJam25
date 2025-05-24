@@ -74,7 +74,7 @@ public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
             {
                 edit.transform.position = rectTransform.gameObject.transform.position;
                 Vector3 pos = edit.transform.position;
-                pos.y = rectTransform.transform.position.y + 100f;
+                pos.y = rectTransform.transform.position.y + 150f;
                 edit.transform.position = pos;
             }
         }

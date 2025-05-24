@@ -46,9 +46,9 @@ public class SubmitJob : MonoBehaviour
         MoneyManager.Money += 100;
         TaskDatabase.RemoveTask(TaskDatabase.currentTask);
         TaskDatabase.currentTask = null;
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(0);
         // Panel: Abgegeben
-        Debug.Log($"{ScoreManager.score}");
+        // Debug.log(.*)
 
 
     }

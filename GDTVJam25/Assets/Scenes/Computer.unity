@@ -442,10 +442,10 @@ RectTransform:
   - {fileID: 1183222929}
   m_Father: {fileID: 1031663419}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000030517578, y: 395.30466}
-  m_SizeDelta: {x: 0, y: -790.6143}
+  m_SizeDelta: {x: 400, y: 133.38568}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &265499480
 MonoBehaviour:
@@ -1341,138 +1341,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &588811375
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 588811376}
-  - component: {fileID: 588811377}
-  m_Layer: 5
-  m_Name: ComputerUIManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &588811376
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 588811375}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1354461352}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &588811377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 588811375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b3638e340d02ac4589af78fc6e3ddf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  taskButtonPrefab: {fileID: 0}
-  contentParent: {fileID: 0}
-  descriptionText: {fileID: 0}
-  sender: {fileID: 0}
-  subject: {fileID: 0}
-  canvas: {fileID: 0}
-  TIME: {fileID: 0}
-  SideQuestNone: {fileID: 0}
-  SideQuest: {fileID: 0}
-  SideTitle: {fileID: 0}
-  SideDescription: {fileID: 0}
-  selected:
-    subject: 
-    description: 
-    sender: 
-    sendermail: 
-    mailContent: 
-    requiredScore: 0
-    type: 0
-  button: {fileID: 0}
---- !u!1 &594078227
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 594078229}
-  - component: {fileID: 594078230}
-  m_Layer: 0
-  m_Name: ComputerUI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &594078229
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 594078227}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1103.3754, y: 504.3523, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &594078230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 594078227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b3638e340d02ac4589af78fc6e3ddf8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  taskButtonPrefab: {fileID: 0}
-  contentParent: {fileID: 1522576985}
-  descriptionText: {fileID: 0}
-  sender: {fileID: 0}
-  subject: {fileID: 0}
-  canvas: {fileID: 0}
-  TIME: {fileID: 0}
-  SideQuestNone: {fileID: 0}
-  SideQuest: {fileID: 0}
-  SideTitle: {fileID: 0}
-  SideDescription: {fileID: 0}
-  selected:
-    subject: 
-    description: 
-    sender: 
-    sendermail: 
-    mailContent: 
-    requiredScore: 0
-    type: 0
-  button: {fileID: 0}
 --- !u!1 &603489345
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,7 +2410,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 911860761}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2828,50 +2696,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183222928}
   m_CullTransparentMesh: 1
---- !u!1 &1215965119
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1215965121}
-  - component: {fileID: 1215965120}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1215965120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215965119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b338f9901cf20104bb50d29c6f4b7727, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1215965121
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215965119}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1103.3754, y: 504.3523, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1272977081 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6050417699607641584, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
@@ -3108,7 +2932,6 @@ RectTransform:
   - {fileID: 506053663}
   - {fileID: 1522576985}
   - {fileID: 1362122478584622440}
-  - {fileID: 588811376}
   - {fileID: 1730135075}
   - {fileID: 2001924620}
   - {fileID: 945293776}
@@ -4126,5 +3949,3 @@ SceneRoots:
   - {fileID: 1339119121}
   - {fileID: 1354461352}
   - {fileID: 573136766}
-  - {fileID: 1215965121}
-  - {fileID: 594078229}

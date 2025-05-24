@@ -19,11 +19,11 @@ public class select : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("test");
+        // // Debug.log(.*)
 
         if (eventData.pointerCurrentRaycast.gameObject == trash)
         {
-            Debug.Log("test");
+            // // Debug.log(.*)
             Destroy(selected);
             Vector3 posi = edit.transform.position;
             posi.y = -1000f;
@@ -47,7 +47,7 @@ public class select : MonoBehaviour, IPointerDownHandler
         }
         else if (eventData.pointerCurrentRaycast.gameObject != rectTransform.gameObject)
         {
-            Debug.Log("test");
+            // // Debug.log(.*)
             if (selected != eventData.pointerCurrentRaycast.gameObject)
             {
                 if (eventData.pointerCurrentRaycast.gameObject != edit)
@@ -59,7 +59,7 @@ public class select : MonoBehaviour, IPointerDownHandler
                     selected = eventData.pointerPressRaycast.gameObject;
                     edit.transform.position = selected.gameObject.transform.position;
                     Vector3 pos = edit.transform.position;
-                    pos.y = selected.transform.position.y + 100f;
+                    pos.y = selected.transform.position.y + 150f;
                     edit.transform.position = pos;
                 }
 

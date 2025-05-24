@@ -27,7 +27,7 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
         {
             currentEntry++;
             GameObject entry = Instantiate(taskButtonPrefab, contentParent);
-            entry.transform.position = new Vector3(taskButtonPrefab.transform.position.x, taskButtonPrefab.transform.position.y - (currentEntry * 150), 0);
+            entry.transform.position = new Vector3(taskButtonPrefab.transform.position.x, taskButtonPrefab.transform.position.y - (currentEntry * transform.lossyScale.y * 140), 0);
             entry.GetComponent<TaskEntryUI>().Setup(task, this);
             entry.GetComponent<Image>().color = new Color((float)180 / 255, (float)180 / 255, (float)180 / 255);
             mails.Add(entry, task);
@@ -38,7 +38,7 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
                 sender.text = task.sendermail;
                 subject.text = task.subject;
                 selected = task;
-                Debug.Log(task.subject);
+                // Debug.log(.*)
             }
         }
         taskButtonPrefab.transform.position = new Vector3(taskButtonPrefab.transform.position.x + 10000, taskButtonPrefab.transform.position.y, 0);
@@ -59,7 +59,7 @@ public class ComputerUIManager : MonoBehaviour, IPointerDownHandler
 
     private void Update()
     {
-        //TIME.text = System.DateTime.Now.ToString();
+        TIME.text = System.DateTime.Now.ToString();
     }
 
     public void OnPointerDown(PointerEventData eventData)
