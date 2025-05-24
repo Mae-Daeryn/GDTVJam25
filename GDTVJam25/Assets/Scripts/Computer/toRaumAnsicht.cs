@@ -21,6 +21,7 @@ public class toRaumAnsicht : MonoBehaviour, IPointerClickHandler
                 if (child.name != "edit")
                 {
                     child.SetParent(null);
+                    saveItems.AddToList(child.gameObject);
                     DontDestroyOnLoad(child.gameObject);
                 }
             }

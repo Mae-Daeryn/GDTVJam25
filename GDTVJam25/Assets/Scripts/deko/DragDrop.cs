@@ -60,6 +60,7 @@ public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
                 {
                     rectTransform.tag = "water";
                 }
+                rectTransform.transform.localScale = new Vector3(rectTransform.localScale.x * 2, rectTransform.localScale.y * 2, 1);
 
             }
         }
@@ -87,7 +88,11 @@ public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
     {
         if (rectTransform.tag != "Items")
         {
-            rectTransform.transform.SetParent(dropzone);
+            if(rectTransform.transform.parent != dropzone)
+            {
+
+                rectTransform.transform.SetParent(dropzone);
+            }
             Image image = rectTransform.GetComponent<Image>();
             if (!RectTransformUtility.RectangleContainsScreenPoint(dropzone, Input.mousePosition, eventData.pressEventCamera))
             {

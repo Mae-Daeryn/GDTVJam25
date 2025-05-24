@@ -3,18 +3,22 @@ using UnityEngine;
 public class moveFromDestroy : MonoBehaviour
 {
 
-    public GameObject dropzone;
+    public RectTransform dropzone;
+    public GameObject edit;
     void Start()
     {
-        GameObject dontDestroyContainer = GameObject.Find("DontDestroyOnLoad");
-        for (int i = dontDestroyContainer.transform.childCount - 1; i >= 0; i--)
+        for (int i = 0; i < saveItems.all.Count; i++)
         {
-            Transform child = dontDestroyContainer.transform.GetChild(i);
+            GameObject child = saveItems.all[i];
 
             if (child.name.Contains("item"))
             {
-                child.SetParent(dropzone.transform, false);
+                child.GetComponent<DragDrop>().dropzone = dropzone;
+                child.GetComponent<DragDrop>().edit = edit;
+                child.transform.localScale = new Vector3(600,300,1);
+                child.transform.SetParent(dropzone.transform, false);
             }
         }
+        saveItems.RemoveList();
     }
 }
