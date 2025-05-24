@@ -16,7 +16,7 @@ public static class TaskDatabase
             "Margaret",
             description = "Build a Desert Terrarium for a Bearded Dragon",
             type = DragDrop.terraType.desert,
-            requiredScore = ScoreManager.score
+            requiredScore = 25
         },
         new Task
         {
@@ -29,7 +29,7 @@ public static class TaskDatabase
             "FrogLover from FroggyStyle",
             description = "Rainforest ambience with lots of humidity and plants",
             type = DragDrop.terraType.rainforest,
-            requiredScore = ScoreManager.score
+            requiredScore = 25
         }
     };
 
