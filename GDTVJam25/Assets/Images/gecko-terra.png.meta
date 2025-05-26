@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8fc717512d31f324d8b65b583237d112
+guid: 8ccd8052e29dd084bb35c1c5374c58fd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4446013776051505778
-    second: gecko-terra_0
+      213: -5672459180319758756
+    second: Unbenanntes_Projekt (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gecko-terra_0
+      name: Unbenanntes_Projekt (1)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1000
-        height: 1000
+        width: 2160
+        height: 1620
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27a0b0c29f963bd30800000000000000
-      internalID: 4446013776051505778
+      spriteID: c562322fd606741b0800000000000000
+      internalID: -5672459180319758756
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      gecko-terra_0: 4446013776051505778
+      Unbenanntes_Projekt (1)_0: -5672459180319758756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
