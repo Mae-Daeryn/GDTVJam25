@@ -83,8 +83,8 @@ Anyways, I'm too cool for random stuff. Make it look gangster-like! Skulls, bone
 
 Cya bro!
 ",
-            description = "Build a \"dangerous\" looking Terrarium for a Sand Boa",
-            type = DragDrop.terraType.rainforest,
+            description = "Build a \"dangerous\" looking desert Terrarium for a Sand Boa",
+            type = DragDrop.terraType.desert,
             requiredScore = 25
         },
         new Task
@@ -115,8 +115,8 @@ I am Sir Brown of Whippersnapper, an extremely rich and important person. I shal
 Wealthy regards,
 
 Sir Brown of Whippersnapper",
-            description = "Build a Desert Terrarium for the Tortoise 'Sir Toir le Toise' from Sir Brown",
-            type = DragDrop.terraType.rainforest,
+            description = "Build a desert Terrarium for the Tortoise 'Sir Toir le Toise' from Sir Brown",
+            type = DragDrop.terraType.desert,
             requiredScore = 25
         }
     };
