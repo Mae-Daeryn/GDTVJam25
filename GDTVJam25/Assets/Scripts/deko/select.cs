@@ -6,7 +6,7 @@ public class select : MonoBehaviour, IPointerDownHandler
 
     private RectTransform rectTransform;
     public GameObject edit;
-    private GameObject selected;
+    public GameObject selected = null;
 
     public GameObject trash;
     public GameObject rotate_left;
@@ -47,15 +47,8 @@ public class select : MonoBehaviour, IPointerDownHandler
         }
         else if (eventData.pointerCurrentRaycast.gameObject != rectTransform.gameObject)
         {
-            // // Debug.log(.*)
-            if (selected != eventData.pointerCurrentRaycast.gameObject)
-            {
                 if (eventData.pointerCurrentRaycast.gameObject != edit)
                 {
-                    if (selected != null)
-                    {
-                        selected = null;
-                    }
                     selected = eventData.pointerPressRaycast.gameObject;
                     edit.transform.position = selected.gameObject.transform.position;
                     Vector3 pos = edit.transform.position;
@@ -66,15 +59,7 @@ public class select : MonoBehaviour, IPointerDownHandler
 
 
 
-            }
-            else
-            {
-                Vector3 pos = edit.transform.position;
-                pos.y = -1000f;
-                edit.transform.position = pos;
-                selected = null;
-            }
-
+            
         }
     }
 }

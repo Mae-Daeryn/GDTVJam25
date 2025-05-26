@@ -76,6 +76,10 @@ public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
                 Vector3 pos = edit.transform.position;
                 pos.y = rectTransform.transform.position.y + 150f;
                 edit.transform.position = pos;
+                if (edit.GetComponent<select>().selected == null)
+                {
+                    edit.GetComponent<select>().selected = this.gameObject;
+                }
             }
         }
 
@@ -98,6 +102,10 @@ public class DragDrop : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, 
                 Vector3 pos = edit.transform.position;
                 pos.y = -1000f;
                 edit.transform.position = pos;
+                if (edit.GetComponent<select>().selected == null)
+                {
+                    edit.GetComponent<select>().selected = this.gameObject;
+                }
             }
         }
     }
