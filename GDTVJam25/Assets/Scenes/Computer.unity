@@ -330,8 +330,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Crested Gecko Terra Build
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85b748ab27712347a556c77ceef266d, type: 2}
+  m_sharedMaterial: {fileID: 3562595063544143783, guid: b85b748ab27712347a556c77ceef266d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -702,8 +702,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'From:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85b748ab27712347a556c77ceef266d, type: 2}
+  m_sharedMaterial: {fileID: 3562595063544143783, guid: b85b748ab27712347a556c77ceef266d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -974,8 +974,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: TITEL
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85b748ab27712347a556c77ceef266d, type: 2}
+  m_sharedMaterial: {fileID: 3562595063544143783, guid: b85b748ab27712347a556c77ceef266d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1411,8 +1411,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -361.1, y: 281.91}
-  m_SizeDelta: {x: 478.98, y: 25.965}
+  m_AnchoredPosition: {x: -359.3, y: 284.18466}
+  m_SizeDelta: {x: 478.98, y: 30.5142}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &808431356
 MonoBehaviour:
@@ -1436,8 +1436,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: reptileKeeper@hotmail.com
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85b748ab27712347a556c77ceef266d, type: 2}
+  m_sharedMaterial: {fileID: 3562595063544143783, guid: b85b748ab27712347a556c77ceef266d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1859,8 +1859,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'To: Terra-Building@daeryn.net'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85b748ab27712347a556c77ceef266d, type: 2}
+  m_sharedMaterial: {fileID: 3562595063544143783, guid: b85b748ab27712347a556c77ceef266d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2410,7 +2410,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 911860761}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2619,8 +2619,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ReptileKeeper
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b85b748ab27712347a556c77ceef266d, type: 2}
+  m_sharedMaterial: {fileID: 3562595063544143783, guid: b85b748ab27712347a556c77ceef266d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3481,8 +3481,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -469.12677, y: 255.1395}
-  m_SizeDelta: {x: -1103.9534, y: -904.8179}
+  m_AnchoredPosition: {x: -376.95636, y: 254.49045}
+  m_SizeDelta: {x: -919.6124, y: -906.116}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1871442388
 MonoBehaviour:
@@ -3687,16 +3687,20 @@ PrefabInstance:
       value: accept
       objectReference: {fileID: 0}
     - target: {fileID: 3931029603383599978, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 813.6807
+      objectReference: {fileID: 0}
+    - target: {fileID: 3931029603383599978, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 356.5327
+      value: 407.1616
       objectReference: {fileID: 0}
     - target: {fileID: 3931029603383599978, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 77
+      value: -236.5096
       objectReference: {fileID: 0}
     - target: {fileID: 3931029603383599978, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -28
+      value: -53.3145
       objectReference: {fileID: 0}
     - target: {fileID: 4568855772202922489, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -3736,11 +3740,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6050417699607641584, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_text
-      value: EMAIL INHALT
+      value: "\u3053\u3093\u306B\u3061\u306F\u3001\u89AA\u611B\u306A\u308B\u4F1A\u793E\u69D8\u3002\u30A2\u30B4\u30D2\u30B2\u30C8\u30AB\u30B2\u7528\u306E\u30C6\u30E9\u30EA\u30A6\u30E0\u304C\u5FC5\u8981\u3067\u3059\u3002\u898B\u305F\u76EE\u3092\u304D\u308C\u3044\u306B\u6574\u3048\u3066\u3082\u3089\u3048\u307E\u3059\u304B\uFF1F\u4E88\u7B97\u306F\u95A2\u4FC2\u3042\u308A\u307E\u305B\u3093\u3002     
+        \u3069\u3046\u3082\u3042\u308A\u304C\u3068\u3046\u3002\r\n\u5FC3\u304B\u3089\u3001\r\n\u6B63\u7530\u5D07\u5F18\u7FA9\r\n\r\nTranslation
+        by noodle translate:\r\nGood day, fighting office. I need a terrarium for
+        a beard in a game. Please make it look correct and visible. Many coins don't
+        play a role. Thank you!\r\nUntil we meet again,\r\nName"
       objectReference: {fileID: 0}
     - target: {fileID: 6050417699607641584, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_fontSize
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6050417699607641584, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b85b748ab27712347a556c77ceef266d, type: 2}
+    - target: {fileID: 6050417699607641584, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6050417699607641584, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_fontColor.b
@@ -3759,8 +3775,20 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6050417699607641584, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6050417699607641584, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3562595063544143783, guid: b85b748ab27712347a556c77ceef266d, type: 2}
+    - target: {fileID: 6050417699607641584, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 6050417699607641584, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6533368175014410961, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_text
@@ -3771,6 +3799,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6533368175014410961, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b85b748ab27712347a556c77ceef266d, type: 2}
+    - target: {fileID: 6533368175014410961, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_fontColor.b
       value: 0
       objectReference: {fileID: 0}
@@ -3787,8 +3819,16 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6533368175014410961, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3562595063544143783, guid: b85b748ab27712347a556c77ceef266d, type: 2}
+    - target: {fileID: 6533368175014410961, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 6533368175014410961, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6681866300656412899, guid: 853c4b5231d18994dada2625d288e3c5, type: 3}
       propertyPath: m_Sprite
