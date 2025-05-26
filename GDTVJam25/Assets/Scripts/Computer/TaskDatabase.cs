@@ -18,7 +18,7 @@ I want it to look like an arena or something like that! Can you do that?!
 Alright! Fist on it!
 
 Kungfu Sandra",
-            description = "Build a Betta fish tank for little Goku",
+            description = "Build a fish tank for little Goku",
             type = DragDrop.terraType.water,
             requiredScore = 25
         },
@@ -35,7 +35,7 @@ It should be awesome to have different layers of plants which provide enough cov
 However, everything is fine (No it's not! Please make it a steady terrarium)!
 
 Despaired regards from KENNY!!!!",
-            description = "Rainforest ambience with lots of humidity and plants",
+            description = "Build a rainforest terrarium for a Day Gecko",
             type = DragDrop.terraType.rainforest,
             requiredScore = 25
         },
@@ -53,7 +53,7 @@ I always wanted to have a super sweet and colourful terrarium with lots of frogg
 
 Lovely regards,
 Mary ^-^",
-            description = "Rainforest ambience with lots of humidity and plants",
+            description = "Build a rainforest terrarium for Frogs",
             type = DragDrop.terraType.rainforest,
             requiredScore = 25
         },
@@ -67,7 +67,7 @@ Mary ^-^",
 I've got a Chameleon. I only care for a good environment within the terrarium. I don't care what it looks like as long as the Chameleon will feel safe and well. That's it.
 
 Jody",
-            description = "Rainforest ambience with lots of humidity and plants",
+            description = "Build a rainforest Terrarium for a Chameleon",
             type = DragDrop.terraType.rainforest,
             requiredScore = 25
         },
@@ -83,7 +83,7 @@ Anyways, I'm too cool for random stuff. Make it look gangster-like! Skulls, bone
 
 Cya bro!
 ",
-            description = "Rainforest ambience with lots of humidity and plants",
+            description = "Build a \"dangerous\" looking Terrarium for a Sand Boa",
             type = DragDrop.terraType.rainforest,
             requiredScore = 25
         },
